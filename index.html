@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap start -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <!-- bootstrap end -->
+    <!-- main style start -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- main style end -->
+</head>
+<body>
+    
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-3 my-md-3">
+                <label for="countSystem">Count System</label>
+                <select class="form-control" id="countSystem">
+                    <option value="forward">Forward</option>
+                    <option value="backwards">Backwards</option>
+                </select>
+                <div class="input-time d-none">
+                    <label for="time">Input minite</label>
+                    <input id="fromtime" class="form-control" type="number">
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="btn-group">
+                    <button id="countStart" class="btn btn-primary">Start</button>
+                    <button id="countStop" class="btn btn-danger">Stop</button>
+                    <button id="countReset" class="btn btn-success">Reset</button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="time text-center my-4 display-1">
+                    <span id="hour">00</span> :
+                    <span id="minit">00</span> :
+                    <span id="second">00</span> :
+                    <span id="milisecond">00</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <div class="counter"></div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+
+    <!-- bootstrao script start -->
+    <script src="./assets/js/bootstrap.js"></script>
+    <!-- bootstrao script end -->
+    <!-- main script start -->
+    <script src="./assets/js/function.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <!-- main script end -->
+</body>
+</html>
